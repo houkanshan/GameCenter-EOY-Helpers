@@ -1,0 +1,29 @@
+.container {
+  width: 1000px;
+  margin: 200px auto;
+}
+
+.main fieldset {
+  margin-bottom: 20px;
+  border: none;
+  background: #eee;
+}
+
+.main legend {
+  color: #666;
+}
+
+.field label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.field .text {
+  flex: 200px 0 0;
+}
+.field input[type=url],
+.field select {
+  flex: 200px 1 1;
+}

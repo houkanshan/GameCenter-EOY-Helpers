@@ -1,0 +1,44 @@
+.displayArea {
+  /* width: 1800px; */
+  /* height: 64px; */
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.bottomMessage[data-is-hiding="true"] .message {
+  animation: fade-out 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.message {
+  animation: fade-in 1s ease-in;
+  animation-fill-mode: forwards;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+
+@keyframes fade-in {
+  from {
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(-20px, 0, 0);
+    opacity: 0;
+  }
+}
